@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: aqua;
+    height: 100vh;
+
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    /* animation-name: widthAnimate;
+
+NAME
+ DURATION
+  TIMING-FUNCTION
+   DELAY
+    ITERATION-COUNT
+     DIRECTION
+*/
+    animation: widthAnimate 2s ease-in-out infinite normal;
+
+
+}
+
+
+/* YOU CAN USE THIS AS WELL */
+
+/* @keyframes widthAnimate {
+from{
+    width: 300px ;
+    height:200px;
+    background-color: rebeccapurple;
+    opacity: 0.5;
+}
+to{
+    width: 700px;
+    color: black;
+}
+} */
+
+
+@keyframes widthAnimate {
+    0% {
+        width: 300px;
+        height: 200px;
+        opacity: 0.1;
+    }
+
+    50% {
+        background-color: red;
+        width: 700px;
+        color: rgb(25, 0, 255);
+    }
+
+    100% {
+        background-color: antiquewhite;
+        width: 100vw;
+        color: black;
+        height: 50vh;
+
+    }
+}

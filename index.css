@@ -1,0 +1,33 @@
+.container{
+    /* box-sizing: border-box; */
+    background-color: red;
+    height: 40vh;
+}
+.box1{
+    display: inline-block;
+
+    /* box-sizing: border-box; */
+    /* height: 20px;
+    width: 20px; */
+    border: 2px solid black;
+    /* transform: translate(34px ,200px) rotate(90deg);
+    transform-origin: 0%; */
+    /* transform: scale(4,7); */
+img{
+    opacity: 0.3;
+}  
+}
+img:hover{
+    width: 455px;
+    opacity: 1;
+    /* transition-property:width opacity ;
+    transition-duration: 1s;
+    
+    transition-timing-function: ease-in-out; 
+    transition-delay: 1s;
+    
+    MAKING ALL THESE PROPERTY SHORT-HAND
+    */
+    transition: width 1s ease-in-out 0s, opacity 1s ease-in-out 10ms;
+
+}
