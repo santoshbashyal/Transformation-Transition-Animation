@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    /* height: 10vh; */
+    background-color: black;
+    color: white;
+    position: relative;
+    /* display: inline-flex; */
+}
+
+ul {
+    /* font-style: none; */
+    list-style: none;
+    display: inline-flex;
+}
+
+li {
+    font-style: none;
+    padding: 5px 20px;
+    margin: 10px;
+    opacity: 0.5;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+
+.load {
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    animation: loading 2s ease-in-out 1;
+
+}
+
+@keyframes loading {
+    0% {
+        width: 10vw;
+    }
+
+    40% {
+        width: 60vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+
+}
+
+/* @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    
+    100%{
+       
+        transform: rotate(3600deg);
+    } 
+    
+} */
+/* .container{
+    
+    background-color: antiquewhite;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+/* .img{
+    height: 122px;
+    background-color: antiquewhite;
+   
+}
+img{
+    animation: rotate 10s ease-in-out infinite  ;
+
+} */
+footer {
+    background-color: black;
+    height: 30vh;
+}
+
+.slider {
+    
+    background-color: aqua;
+    height: 40vh;
+    display: flex;
+    /* display: inline-block; */
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+
+
+}
+img{
+    height: 50vh;
+    margin: auto;
+}
+
+.img1 {
+
+    transform: translate(-20vw);
+    animation: image1 3s  3s infinite forwards ;
+    
+}
+
+.img2 {
+    transform: translate(0vw);
+    animation: image2 3s  3s infinite forwards;
+    
+}
+.img3 {
+    transform: translate(21vw);
+    animation: image3 3s  3s infinite  forwards ;
+    
+}
+
+
+@keyframes image1 {
+    0%{
+        transform: translate(-20vw);
+    }
+    100%{
+        transform: translate(60vw);
+    }
+    
+}
+@keyframes image2 {
+    0%{
+        transform: translate(0vw);
+    }
+    100%{
+        transform: translate(82vw);
+    }
+    
+}
+@keyframes image3 {
+    0%{
+        transform: translate(21vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+    
+}
